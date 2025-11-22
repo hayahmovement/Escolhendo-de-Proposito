@@ -1,0 +1,1 @@
+Escolhendo de Propósito é uma tradição de Orientação Vocacional que busca orientar o jovem na sua escolha profissional a partir de uma compreensão integral de vida e trabalho, valorizando sua identidade e trazendo claro de seu propósito como base para suas escolhas.
