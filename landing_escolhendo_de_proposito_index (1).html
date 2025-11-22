@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Escolhendo de Propósito — Landing Page</title>
+  <meta name="description" content="Escolhendo de Propósito — orientação vocacional para escolhas profissionais alinhadas à identidade e propósito de vida." />
+  <meta property="og:title" content="Escolhendo de Propósito" />
+  <meta property="og:description" content="Orientação vocacional prática para quem quer fazer escolhas profissionais alinhadas ao propósito de vida." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#f7fbfb;
+      --petrol:#05464f; /* azul petróleo */
+      --petrol-2:#0b6a6d;
+      --accent:#ffffff;
+      --muted:#617072;
+      --container:1100px;
+      --radius:14px;
+      --max-width:900px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,var(--bg),#eef6f7); color:#093235}
+    header{background:linear-gradient(180deg,var(--petrol),var(--petrol-2)); color:var(--accent); padding:48px 20px 64px; border-bottom-left-radius:40px; border-bottom-right-radius:40px}
+    .wrap{max-width:var(--container); margin:0 auto}
+    .hero{display:flex; gap:32px; align-items:center; justify-content:space-between}
+    .hero-left{flex:1; min-width:260px}
+    .kicker{font-size:14px; letter-spacing:1px; text-transform:uppercase; opacity:.9}
+    h1{font-size:36px; margin:8px 0 6px; line-height:1.02}
+    .subtitle{margin:0 0 18px; color:rgba(255,255,255,0.95); font-size:16px}
+    .cta-row{display:flex; gap:12px; align-items:center; margin-top:18px}
+    .btn{background:var(--accent); color:var(--petrol); padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:600}
+    .btn-outline{background:transparent; border:2px solid rgba(255,255,255,0.18); color:var(--accent)}
+
+    .cover{width:220px; min-width:160px; border-radius:10px; box-shadow:0 12px 30px rgba(5,70,79,0.18); overflow:hidden; background:linear-gradient(180deg,#fff,#f3f6f6); display:flex; align-items:center; justify-content:center}
+    .cover img{width:100%; height:auto; display:block}
+
+    main{max-width:var(--max-width); margin:36px auto; padding:24px}
+    .card{background:#fff; border-radius:16px; padding:22px; box-shadow:0 6px 18px rgba(2,18,20,0.06); margin-bottom:18px}
+
+    section h2{margin-top:0}
+    ul.topicos{columns:2; padding-left:18px; color:var(--muted)}
+    ul.topicos li{margin-bottom:8px}
+
+    .intro p{white-space:pre-wrap; color:#0b3333}
+
+    .two-col{display:grid; grid-template-columns:1fr 320px; gap:20px}
+
+    aside .card{position:sticky; top:24px}
+
+    footer{padding:28px 20px; text-align:center; color:var(--muted); font-size:14px}
+
+    /* decorative mountain */
+    .mountain{width:100%; max-width:1200px; margin:0 auto; transform:translateY(10px)}
+    .mountain svg{display:block; width:100%; height:72px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{flex-direction:column; align-items:flex-start}
+      .two-col{grid-template-columns:1fr;}
+      ul.topicos{columns:1}
+      .cover{width:160px}
+      h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero">
+      <div class="hero-left">
+        <div class="kicker">Lançamento / Orientação Vocacional</div>
+        <h1>Escolhendo de Propósito</h1>
+        <p class="subtitle">Orientação Vocacional para quem busca fazer escolhas profissionais alinhadas à sua identidade e propósito de vida!</p>
+        <div class="cta-row">
+          <a class="btn" href="#introducao">Ler introdução</a>
+          <a class="btn btn-outline" href="#topicos">Ver tópicos</a>
+        </div>
+      </div>
+      <div class="cover" aria-hidden="true">
+        <!-- Substitua Green Modern Photocentric Motivational Quote Doubt Your Limits Instagram Post Portrait (1).png pelo arquivo da capa no repositório -->
+        <img src="Green Modern Photocentric Motivational Quote Doubt Your Limits Instagram Post Portrait (1).png" alt="Capa do livro" class="cover-image">
+      </div>
+    </div>
+    <div class="mountain" aria-hidden="true">
+      <!-- simples ilustração de montanha -->
+      <svg viewBox="0 0 1200 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 40 C150 10 300 60 450 30 C600 0 750 50 900 20 C1050 -10 1200 40 1200 40 L1200 80 L0 80 Z" fill="#eef6f7" />
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <div class="two-col">
+      <div>
+        <section id="topicos" class="card">
+          <h2>O que você encontrará neste livro</h2>
+          <ul class="topicos">
+            <li>1 — Abrace seu propósito! — o que é propósito e a importância de fazer escolhas alinhadas a seu propósito de vida.</li>
+            <li>2 — As 4 dimensões da jornada — Como Identidade, Chamado, Vocação e Propósito se complementam.</li>
+            <li>3 — Com que lentes você enxerga o mundo? — Sua visão de mundo determinará como fará sua jornada profissional.</li>
+            <li>4 — O que você carrega em sua mochila? — valores, habilidades, paixões, soft skills e o que precisa deixar para trás.</li>
+            <li>5 — Escolhendo de propósito — escolhas virtuais, impessoais e autênticas; referências profissionais; e os 5 critérios de escolha profissional com propósito.</li>
+            <li>6 — Informação sobre mercado de trabalho — tendências, diferenças geracionais e características para se destacar.</li>
+            <li>7 — Áreas de atuação e trilhas — público, corporativo, empreendedorismo, combinações + bônus sobre investimentos.</li>
+            <li>8 — Esferas de influência da sociedade e lista de cursos profissionalizantes no Brasil.</li>
+            <li>9 — Pesquisa de profissões — estrutura de pesquisa e como fazer planejamento.</li>
+            <li>10 — Teste dos sonhos e declaração de propósito — diagnóstico e posicionamento na jornada.</li>
+          </ul>
+        </section>
+
+        <section id="introducao" class="card intro">
+          <h2>Introdução</h2>
+          <p>
+E aí, galera?! Bora começar uma incrível aventura? Se você resolveu dar uma chance para esse livro eu imagino que é uma pessoa que quer descobrir e viver seu propósito de vida. E mais: você quer fazer escolhas, inclusive sobre sua carreira e profissão, que tenham a ver com seu propósito. O que deve estar passando pela sua cabeça agora é: tá bom, mas como eu faço pra saber qual é o meu propósito? Como eu escolho uma profissão que me faça feliz e realizado? Quem eu devo ouvir? Quais são as dicas mais quentes?
+
+Se você tem essas e outras dúvidas, relaxa! Você não está sozinho nessa! Pesquisas mostram que 75% dos jovens entre 17 e 24 anos estão perdidos na hora de fazer escolhas profissionais que combinem com seu propósito de vida. Estas também mostram que até 82% dos jovens que estão no ensino médio não têm certeza ou não fazem ideia de que profissão seguir. É muita gente, né? O medo de errar tem travado muitos jovens quando eles precisam decidir que carreira seguir e que caminho tomar para chegar lá. E qual é o rolê disso? Essa realidade não traz só aquela bad, mas também uma falta de sentido e pior, um mal-estar físico e emocional. Essa pressão te faz sentir que você é um fracasso, te deixa ansioso, frustrado e preso na comparação com os outros.
+
+Talvez você ou alguém que você conheça esteja nessa vibe de estar entre escolher uma carreira que pague bem mas que não empolga, ou seguir sua paixão junto com o medo de que ela não leve a lugar nenhum. É pra te ajudar nessa missão que o Escolhendo de Propósito existe! Esse não é um curso ou um daqueles serviços de orientação profissional comuns. Eu te convido a encarar essa imersão como uma viagem, uma jornada de descobertas que vai te ajudar a liberar todo potencial criativo que existe em você para fazer escolhas de vida e trabalho que te levem ao seu lugar no mundo.
+
+Quando a gente faz uma viagem de férias, por exemplo, a preparação começa bem antes: pesquisamos os lugares que queremos conhecer, o roteiro, as roupas e acessórios que precisamos levar. Tudo isso já faz parte da viagem. E o melhor: toda a preparação pode ser tão divertida quanto a própria viagem em si. Cada viagem é única. Se você sonha em conhecer um lugar com neve ou se prefere torrar numa praia, você não pode levar as mesmas coisas, né? A forma como você vai arrumar sua mala é totalmente diferente. Da mesma forma, você precisa pensar em como vai chegar até seu destino. Você vai viajar de carro, de trem ou de avião? Se for uma viagem internacional, será que precisa de visto para entrar naquele país? Se sim, será que precisa de entrevista ou é só pagar a taxa pelo documento?
+
+Até para um mesmo destino, uma viagem pode ser totalmente diferente de uma pessoa para outra. Se você for passar as férias em Orlando, pode curtir mais algum parque com brinquedos radicais como a Universal ou ser daqueles que preferem caminhar em meio à cultura dos vários países no Epcot enquanto coleciona carimbos no seu world showcase passport. Aqui está o bizu pra te ajudar a fazer sua escolha profissional de forma mais assertiva: encarar esse processo como uma viagem!
+
+Eu te convido a pensar no Escolhendo de Propósito como uma preparação para uma viagem em que faremos uma trilha até nosso destino no topo de uma montanha! Cada capítulo trata de uma parte dessa viagem e é muito importante que você entenda que o que está nas suas mãos não é um curso, um manual teórico sobre o tema, mas sim mão na massa! Lembre-se: a prática é melhor que a teoria!
+
+Vamos entender o porquê e o como de cada etapa. Cada passo do processo faz parte de um todo maior que vai fazer a diferença no final. Por exemplo, você não ia querer ser barrado ao chegar no seu destino porque vacilou e esqueceu de tirar seu visto, né?
+
+Nossa jornada está dividida em 10 tópicos (ou estações e acampamentos, como vamos ver mais pra frente). Em cada capítulo você vai encontrar uma série de exercícios que são essenciais no seu processo de descobertas e escolhas. É o que eu chamo de catar lenha, a hora de praticar e colocar a mão na massa pra manter acesa a chama na fogueira em cada estação da jornada. É muito importante que você não pule a ordem dos capítulos, pois a estrutura de como cada tema é apresentado faz a conexão com o tema seguinte. A cada capítulo você adiciona ferramentas importantes que se juntarão àquelas que você já tem na sua mochila no começo da sua jornada.
+
+Falando em mochila, vamos gastar um bom tempo pensando no que não pode faltar nela. Mas antes vamos falar da importância de como você vê a sua jornada de descobertas e as quatro dimensões dessa jornada. Esses temas são a base para que todo o processo de escolha aconteça de forma autêntica. Então, passaremos pelos critérios de escolhas profissionais, informações sobre o mercado de trabalho, as tendências para o futuro, a importância das sete áreas de influência da sociedade e listas de profissões divididas por tipo de formação e esferas da sociedade. Em seguida, veremos como fazer suas pesquisas e seu planejamento para realizar suas escolhas, um mapa de estratégias para alcançar seus objetivos. Por fim, você vai aprender a fazer uma declaração de propósito e o seu teste dos sonhos, que não é um teste vocacional mas uma ferramenta para te ajudar em cada parte do seu mapa de estratégias.
+
+E pra começar, vamos pensar um pouco sobre propósito. Afinal, o que é propósito e qual a importância de fazer sua escolha profissional a partir dele?
+
+E aí, tá preparado para sua jornada de descobertas?
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>Como usar este livro</h2>
+          <p class="muted">Cada capítulo traz exercícios práticos. Recomendação: faça as atividades na ordem e mantenha um caderno ou um documento digital com suas respostas — isso facilitará seu planejamento e revisão ao longo da jornada.</p>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Informações rápidas</h3>
+          <p><strong>Título:</strong> Escolhendo de Propósito</p>
+          <p><strong>Subtítulo:</strong> Orientação Vocacional para quem busca fazer escolhas profissionais alinhadas à sua identidade e propósito de vida!</p>
+          <p><strong>Formato:</strong> Livro digital / impresso</p>
+          <p><strong>Disponibilidade:</strong> Em breve — link de compra será adicionado</p>
+          <a class="btn" href="#" 
+        </div>
+
+        <div class="card">
+          <h3>Chamado à ação</h3>
+          <p class="muted">Quer receber novidades do lançamento e materiais bônus?</p>
+          <!-- Formulário simples — substitua a ação pelo endpoint da sua ferramenta de e-mail (MailerLite, Mailchimp etc.) -->
+          <form id="emailForm" onsubmit="return signup(event)">
+            <label for="name" style="display:block;margin-bottom:6px;font-weight:600">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6efef;margin-bottom:10px">
+            <label for="email" style="display:block;margin-bottom:6px;font-weight:600">E‑mail</label>
+            <input id="email" name="email" type="email" placeholder="seu@email.com" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6efef;margin-bottom:12px">
+            <button class="btn" type="submit" style="width:100%">Quero novidades</button>
+            <p id="status" style="font-size:13px;color:var(--muted);margin-top:10px"></p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Resumo dos capítulos</h3>
+          <p class="muted">10 estações de viagem: identidade, lentes de visão, mochila, critérios de escolha, mercado, áreas e trilhas, influência social, pesquisa, planejamento, teste dos sonhos e declaração de propósito.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year"></span> — Escolhendo de Propósito. Desenvolvido por você — personalize este rodapé antes de publicar.</p>
+    </div>
+  </footer>
+
+  <script>
+    // data
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // exemplo de signup local (substitua pela integração com MailerLite / Mailchimp / Google Forms)
+    function signup(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var status = document.getElementById('status');
+      if(!email){ status.textContent = 'Por favor informe um e‑mail válido.'; return false }
+      // apenas simulação — aqui você deve enviar para sua ferramenta de e‑mail via fetch/ajax
+      status.textContent = 'Obrigado, ' + (name||'amigo') + '! Seu e‑mail foi recebido (simulado).';
+      // limpar campos
+      document.getElementById('name').value=''; document.getElementById('email').value='';
+      return false;
+    }
+
+    // dica: substitua Green Modern Photocentric Motivational Quote Doubt Your Limits Instagram Post Portrait (1).png pelo caminho da capa que você fizer upload no repositório
+  </script>
+</body>
+</html>
